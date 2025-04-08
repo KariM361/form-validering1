@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(nav.css);
+:root {
+  --light: #fbfbfb;
+  --dark: #323232;
+  --rose: #aa506c;
+  --olive: #668979;
+  --blue: #657b99;
+  --primary: #3866a7;
+  --secondary: #aaa;
+  --danger: #cc3322;
+}
+
+/* #region GLOBAL */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--light);
+  color: var(--dark);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  margin: 0;
+}
+/* #endregion */
+/* GLOBAL HEADER */
+.header-main {
+  background-color: var(--blue);
+  color: var(--light);
+}
+/* ALL SECTIONS */
+main > section > header:first-of-type {
+  background-color: var(--olive);
+  color: var(--light);
+}
+/* GLOBAL FOOTER */
+.footer-main {
+  background-color: var(--rose);
+  color: var(--light);
+}
+.modalBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: hsla(341, 36%, 49%, 1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#kryds {
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
